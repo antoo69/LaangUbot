@@ -39,7 +39,7 @@ async def module_help(client: Client, message: Message, _):
             xnxx = await eor(message, "🤖")
             sleep(3)
             await xnxx.edit(
-                f"**[✦ Laang Ubot ✦](https://github.com/LaangYB/LaangUbot)**\n"
+                f"**[✦ Ferdi Userbot ✦](https://github.com/antoo69/LaangUbot)**\n"
                 f"**🚀 Total Plugins:** `{len(CMD_HELP)}` **Modules Loaded**\n"
                 f"**👑 Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
                 f"**🔹**   {string}\n"
