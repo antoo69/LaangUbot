@@ -45,7 +45,7 @@ class Var:
     HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
     MONGO_URI = getenv("MONGO_URI", None)
     NO_LOAD = [int(x) for x in getenv("NO_LOAD", "").split() if x]
-    PMPERMIT = getenv("PMPERMIT", "True") == "True"
+    PMPERMIT = getenv("PMPERMIT", "False") == "False"
     PERMIT_MSG = getenv("PERMIT_MSG", MSG_PERMIT)
     PERMIT_LIMIT = int(getenv("PERMIT_LIMIT", 5))
     REM_BG_API_KEY = getenv("REM_BG_API_KEY", "WEnHwQnst3E2HzjGgwmy4UpB")
