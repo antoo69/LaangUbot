@@ -17,8 +17,8 @@ MSG_PERMIT = """
 ⚠️ 𝙸'𝙻𝙻 𝙰𝚄𝚃𝙾-𝙱𝙻𝙾𝙲𝙺 𝙸𝙵 𝚈𝙾𝚄 𝚂𝙿𝙰𝙼
 ⚠️ 𝚆𝙰𝙸𝚃 𝚄𝙽𝚃𝙸𝙻 𝙸 𝙰𝙲𝙲𝙴𝙿𝚃 𝚈𝙾𝚄𝚁 𝙼𝙴𝚂𝚂𝙰𝙶𝙴
 ╭━━━━━━━━━━━━━━━━━━━╮
-┃ ✨ 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 ✨
-┃ ✨ 𝙻𝚊𝚊𝚗𝚐 𝚄𝙱𝙾𝚃 ✨
+┃ ✨ Halo! Nyet... ✨
+┃ ✨ Ferdi Userbot ✨
 ╰━━━━━━━━━━━━━━━━━━━╯
 """
 
@@ -30,8 +30,8 @@ class Var:
         API_ID = int(API_ID)
     else:
         API_ID = None  # Berikan nilai default jika perlu
-    ALIVE_PIC = getenv("ALIVE_PIC", "https://telegra.ph/file/43d490b38cc1199e1706d.jpg")
-    ALIVE_TEXT = getenv("ALIVE_TEXT", "Hey, Saya LaangUbot Dibuat dengan basis pyrogram versi terbaru")
+    ALIVE_PIC = getenv("ALIVE_PIC", "https://envs.sh/PHS.jpg")
+    ALIVE_TEXT = getenv("ALIVE_TEXT", "Woy, Bot masih idup ya pantek ngapain di cek mulu!!")
     BOT_TOKEN = getenv("BOT_TOKEN", "")
     BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
     if not BLACKLIST_CHAT:
