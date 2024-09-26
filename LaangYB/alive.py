@@ -35,7 +35,7 @@ async def aliveme(client: Client, message: Message):
     except Exception as e:
         user = await client.get_me()
         output = (
-            f"**🔗 [Laang Ubot Project](https://github.com/LaangYB/LaangUbot)**\n\n"
+            f"**🔗 [Ferdi Userbot](https://github.com/antoo69/LaangUbot)**\n\n"
             f"**{var.ALIVE_TEXT}**\n\n"
             f"╭───────────◈───────────╮\n"
             f"👤 **Owner :** [{user.first_name}](tg://user?id={user.id})\n"
