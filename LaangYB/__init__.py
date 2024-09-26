@@ -13,14 +13,8 @@
 # ========================×========================
 
 import logging
-from typing import Optional
-
-from fipper import Client
-from fipper.raw.functions.channels import GetFullChannel
-from fipper.raw.functions.messages import GetFullChat
-from fipper.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
-from fipper.types import Message
-
+import os
+import importlib
 from config import *
 from git import Repo
 from pyLnnggg import PyrogramYB
@@ -44,3 +38,17 @@ cache = "cache/{}.png"
 cache_thumb = "cache/thumb{}.png"
 font = "assets/font.ttf"
 font2 = "assets/font2.ttf"
+
+# Load all plugins from the 'plugins' folder automatically
+plugin_folder = os.path.join(os.path.dirname(__file__), "plugins")
+
+# Iterate over all Python files in the 'plugins' directory
+for filename in os.listdir(plugin_folder):
+    if filename.endswith(".py") and filename != "__init__.py":
+        # Import the plugin module dynamically
+        module_name = f"plugins.{filename[:-3]}"
+        try:
+            importlib.import_module(module_name)
+            logs.info(f"Loaded plugin: {module_name}")
+        except Exception as e:
+            logs.error(f"Failed to load plugin {module_name}: {e}")
