@@ -36,7 +36,7 @@ def update_string() -> str:
 
 def alive_string() -> str:
     return f'''
-    <b>🌟 Laang UBOT 🌟</b>
+    <b>🌟 Ferdi USERBOT 🌟</b>
     <b>{var.ALIVE_TEXT}</b>
     <b>╭━═━═━═━═━═━═━═━═━╮</b>
     💡 <b>Modules Loaded:</b> <code>{len(CMD_HELP)} Active</code>
@@ -91,7 +91,7 @@ async def inline_result(_: Client, iq: InlineQuery) -> None:
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     out_ping = (
-       f"<b>🌟 Laang UBot 🌟</b>\n\n"
+       f"<b>💫 Ferdi Userbot 💫</b>\n\n"
        f"<b>💥 Respons Time:</b> <code>{duration}ms</code>\n"
        f"<b>⏱ Uptime:</b> <code>{uptime}</code>"
     )
@@ -118,7 +118,7 @@ async def inline_update(client: Client, iq: InlineQuery) -> None:
     query = iq.query
     update_results = [
         InlineQueryResultArticle(
-            title='Update Laang Ubot!',
+            title='Update Ferdi Userbot!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -152,7 +152,7 @@ async def inline_update(client: Client, iq: InlineQuery) -> None:
     ok = query.split("_")[1]
     update_results = [
         InlineQueryResultArticle(
-            title='Pinned Laang Ubot!',
+            title='Pinned Ferdi Userbot!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -163,7 +163,7 @@ async def inline_update(client: Client, iq: InlineQuery) -> None:
                     ]
                 ]
             ),
-            input_message_content=InputTextMessageContent(f'\nPesan Berhasil di gw sematkan njing!!!'),
+            input_message_content=InputTextMessageContent(f'\nPesan Udah Gw Sematin Ya Monyet!!!'),
         )
     ]
     await iq.answer(update_results, cache_time=0)
@@ -173,7 +173,7 @@ async def inline_lang(client: Client, iq: InlineQuery, _) -> None:
     text, button = await yins.inline_languages(_)
     update_results = [
         InlineQueryResultArticle(
-            title='langs Laang Ubot!',
+            title='langs Ferdi Userbot!',
             reply_markup=InlineKeyboardMarkup(button),
             input_message_content=InputTextMessageContent(text),
         )
